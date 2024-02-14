@@ -1,0 +1,18 @@
+<!-- education.component.html -->
+<h2>Education</h2>
+<section class="education-container">
+  <div *ngFor="let educationItem of education" class="education-card">
+    <h3>{{ educationItem.title }}</h3>
+    <p class="institution">{{ educationItem.institution }}</p>
+    <p class="type">{{ educationItem.type }}</p>
+    <p class="duration">{{ educationItem.duration }}</p>
+  </div>
+</section>
+
+<app-icons
+[homeIcon]="true"
+[contactIcon]="true"
+[educationIcon]="true"
+[experienceIcon]="true"
+[projectIcon]="true"
+[skillIcon]="true"></app-icons>

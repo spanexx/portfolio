@@ -1,0 +1,19 @@
+<!-- skills-page.component.html -->
+<div><h2>Skills</h2></div>
+
+<div class="skills-page-container">
+
+
+    <div *ngFor="let skill of skills" class="skill-card">
+      <h3>{{ skill.name }}</h3>
+      <p>{{ skill.description }}</p>
+      <p><strong>Experience:</strong> {{ skill.experience }}</p>
+    </div>
+  </div>
+  <app-icons
+[homeIcon]="true"
+[contactIcon]="true"
+[educationIcon]="true"
+[experienceIcon]="true"
+[projectIcon]="true"
+[skillIcon]="true"></app-icons>

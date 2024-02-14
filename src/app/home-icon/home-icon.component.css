@@ -1,0 +1,11 @@
+/* home-icon.component.css */
+.home-icon {
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 2; /* Ensure the home icon is above other elements */
+  }
+  
+  .home-icon i {
+    font-size: 24px; /* Adjust the icon size */
+  }
+  

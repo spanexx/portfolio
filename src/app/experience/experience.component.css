@@ -1,0 +1,39 @@
+.experiences-page-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .experience-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .experience-info {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  h3 {
+    color: #7498be;
+    font-size: 24px;
+  }
+  
+  .date {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Add media queries for responsiveness if needed */
+  

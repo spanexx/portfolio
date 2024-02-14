@@ -1,0 +1,80 @@
+.icon-container {
+    position: fixed;
+    top: 20%;
+    left: 90%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  
+  .icon-container > * {
+    /* Apply common styles to all child elements */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .icon-container > .icon {
+    /* background-color: var(--icon-bg, #232735); Use a variable for easier theme changes */
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+  }
+  
+
+  
+  .icon-container > .icon svg {
+    /* Assuming you have custom SVG icons */
+    fill: var(--icon-color, #fff);
+    transition: fill 0.2s ease-in-out;
+  }
+  
+  .icon-container > .dropdown-content {
+    display: none;
+    grid-row: 2;
+    background-color: var(--dropdown-bg, #f0f2f5);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+    animation: slideUp 0.3s ease-in-out forwards;
+  }
+  
+  .icon-container > .dropdown-content.shown {
+    animation: slideDown 0.3s ease-in-out;
+  }
+  .icon{
+    padding: 5px;
+    text-align: center;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  .icon-container.expanded > .icon:hover + .dropdown-content,
+  .icon-container.expanded > .dropdown-content {
+    display: block;
+    transform: translateY(0) scaleY(1); /* Initial positioning */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon-container.expanded > .icon:hover + .dropdown-content:hover {
+    transform: translateY(-5px) scaleY(1.05); /* Adjust values as needed */
+  }

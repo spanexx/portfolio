@@ -1,0 +1,18 @@
+<div class="experiences-page-container">
+    <a routerLink="/about-me"> <h2>Experiences</h2></a>
+    <div *ngFor="let experience of experiences" class="experience-card">
+      <div class="experience-info">
+        <h3>{{ experience.title }}</h3>
+        <p class="date">{{ experience.date }}</p>
+        <p>{{ experience.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <app-icons
+  [homeIcon]="true"
+  [contactIcon]="true"
+  [educationIcon]="true"
+  [experienceIcon]="true"
+  [projectIcon]="true"
+  [skillIcon]="true"></app-icons>

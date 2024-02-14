@@ -1,0 +1,14 @@
+ .icon {
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+ .icon i {
+    font-size: 24px;
+  }
+
+  .icon i:hover{
+    color: rgb(255, 119, 0);
+
+  }
