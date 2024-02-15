@@ -1,19 +1,19 @@
 <div class="projects-page-container">
   <h2>Projects</h2>
   <div class="project-cards-container">
-    <div *ngFor="let project of projects" class="project-card">
-      <div class="project-card" (click)="navigateToAboutMe()" [routerLink]="project.link">
-
+    <div *ngFor="let project of projects" class="project-card" (click)="navigateToProjectDetails(project)">
       <img [src]="project.image" alt="{{ project.title }}" class="project-image">
       <div class="project-info">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
+        <a routerLink="/projects/{{project.id}}">
+          <h3>{{ project.title }}</h3>
+        </a>
+        
+                <p>{{ project.description }}</p>
         <div class="tags">
           <span *ngFor="let tag of project.tags">{{ tag }}</span>
         </div>
-        <a [href]="project.link" target="_blank" class="project-link">Visit Project</a>
+        <a [routerLink]="project.link" class="project-link">Visit Project</a>
       </div>
-    </div>
     </div>
   </div>
 </div>

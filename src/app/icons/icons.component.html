@@ -1,13 +1,13 @@
 <div class="icon-container" [ngClass]="{'expanded': isExpanded}">
   <div class="icon-container-home icon">
-    <app-home [showIcon]="homeIcon"></app-home>    
-    <i class="fa fa-caret-down" #arrowDown></i>
+    <app-home [showIcon]="homeIcon" title="Home"></app-home>
+    <i class="fa fa-caret-down" #arrowDown ></i>
   </div>
   <div class="dropdown-content">
-    <app-contact-icon [showIcon]="contactIcon" class="icon"></app-contact-icon>
-    <app-education-icon [showIcon]="educationIcon" class="icon"></app-education-icon>
-    <app-experience-icon [showIcon]="experienceIcon" class="icon"></app-experience-icon>
-    <app-projects-icon [showIcon]="projectIcon" class="icon"></app-projects-icon>
-    <app-skill-icon [showIcon]="skillIcon" class="icon"></app-skill-icon>
+    <app-contact-icon [showIcon]="contactIcon" class="icon" title="Contact"></app-contact-icon>
+    <app-education-icon [showIcon]="educationIcon" class="icon" title="Education"></app-education-icon>
+    <app-experience-icon [showIcon]="experienceIcon" class="icon" title="Experience"></app-experience-icon>
+    <app-projects-icon [showIcon]="projectIcon" class="icon" title="Projects"></app-projects-icon>
+    <app-skill-icon [showIcon]="skillIcon" class="icon" title="Skills"></app-skill-icon>
   </div>
 </div>

@@ -13,8 +13,11 @@ body {
   .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+  }
+  .social-links{
+    margin-right: 20px;
   }
 
   .social-links a {
@@ -30,7 +33,7 @@ body {
   .bio,
   .contact-details {
     flex: 1;
-    margin: 10px;
+    margin-left: 30px;
   }
 
   .page-links {
@@ -48,13 +51,18 @@ body {
   .page-links li {
     display: inline-block;
     margin: 0 10px;
+  }
+  .page-links li a{
     color: aliceblue;
+  }
+  .page-links li a:hover{
+    color: gold;
   }
 
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;
-      align-items: flex-start;
+      align-items:center;
     }
 
     .social-links {
@@ -68,6 +76,12 @@ body {
     }
 
     .page-links {
-      text-align: left;
+      text-align: center;
+      margin-top: 10px;
+      
+      li{
+        margin-top: 10px;
+      }
     }
+   
   }

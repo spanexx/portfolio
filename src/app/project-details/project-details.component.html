@@ -1,0 +1,40 @@
+<div *ngIf="project" class="project-details-container">
+  <div>
+    <div class="project-detail-image-wrapper">
+      <img [src]="project.image" alt="{{ project.title }}" class="project-detail-image">
+      <div class="project-detail-info-overlay">
+        <h2>{{ project.title }}</h2>
+        <p class="description">{{ project.description }}</p>
+      </div>
+    </div>
+    <div class="project-detail-info">
+      <div class="project-detail-tags">
+        <span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span>
+      </div>
+      <div class="project-detail-links">
+        <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank">GitHub Repo</a>
+        <a *ngIf="project.demoLink" [href]="project.demoLink" target="_blank">Demo</a>
+      </div>
+      <button (click)="toggleAdditionalInfo()" class="info-toggle">
+        Toggle Additional Info
+        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+      </button>
+      <div class="additional-info" *ngIf="showAdditionalInfo">
+        <div *ngIf="project.problemStatement">
+          <h3>Problem Statement</h3>
+          <p>{{ project.problemStatement }}</p>
+        </div>
+        <div *ngIf="project.goals && project.goals.length">
+          <h3>Goals</h3>
+          <ul>
+            <li *ngFor="let goal of project.goals">{{ goal }}</li>
+          </ul>
+        </div>
+        <div *ngIf="project.uniqueValueProposition">
+          <h3>Unique Value Proposition</h3>
+          <p>{{ project.uniqueValueProposition }}</p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>

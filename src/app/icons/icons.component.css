@@ -78,3 +78,22 @@
   .icon-container.expanded > .icon:hover + .dropdown-content:hover {
     transform: translateY(-5px) scaleY(1.05); /* Adjust values as needed */
   }
+
+  .icon i[title] {
+    /* Optional styles for the tooltip */
+    position: relative; /* Needed for positioning */
+  }
+  
+  .icon i[title]:hover::after {
+    content: attr(title);
+    position: absolute; /* Tooltip positioning */
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust as needed */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
