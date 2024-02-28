@@ -1,40 +1,47 @@
-<div *ngIf="project" class="project-details-container">
-  <div>
-    <div class="project-detail-image-wrapper">
-      <img [src]="project.image" alt="{{ project.title }}" class="project-detail-image">
-      <div class="project-detail-info-overlay">
-        <h2>{{ project.title }}</h2>
-        <p class="description">{{ project.description }}</p>
+<div *ngIf="project" class="container project-details-container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="project-detail-image-wrapper position-relative">
+        <img [src]="project.image" alt="{{ project.title }}" class="img-fluid project-detail-image">
+        <div class="project-detail-info-overlay position-absolute bottom-0 start-50 translate-middle-x text-center bg-dark p-3 rounded">
+          <h2 class="text-light">{{ project.title }}</h2>
+          <p class="description text-light">{{ project.description }}</p>
+        </div>
       </div>
     </div>
-    <div class="project-detail-info">
-      <div class="project-detail-tags">
-        <span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span>
+    <div class="col-md-6">
+      <div class="project-detail-info">
+        <div class="project-detail-tags mb-3">
+          <span *ngFor="let tag of project.tags" class="badge bg-primary me-2">{{ tag }}</span>
+        </div>
+        <div class="project-detail-links mb-3">
+          <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank" class="btn btn-outline-dark me-2">GitHub Repo</a>
+          <a *ngIf="project.demoLink" [href]="project.demoLink" target="_blank" class="btn btn-outline-dark">Demo</a>
+        </div>
+        <button (click)="toggleAdditionalInfo()" class="btn btn-secondary">
+          Toggle Additional Info
+          <span class="icon"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="additional-info mt-3" *ngIf="showAdditionalInfo">
+          <div *ngIf="project.problemStatement">
+            <h3>Problem Statement</h3>
+            <p>{{ project.problemStatement }}</p>
+          </div>
+          <p class="mt-4">
+            If you need a similar component or have a project in mind, feel free to <a routerLink="/contact">contact me</a> and describe your project requirements.
+          </p>
+          <div *ngIf="project.goals && project.goals.length">
+            <h3>Goals</h3>
+            <ul>
+              <li *ngFor="let goal of project.goals">{{ goal }}</li>
+            </ul>
+          </div>
+          <div *ngIf="project.uniqueValueProposition">
+            <h3>Unique Value Proposition</h3>
+            <p>{{ project.uniqueValueProposition }}</p>
+          </div>
+        </div>
       </div>
-      <div class="project-detail-links">
-        <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank">GitHub Repo</a>
-        <a *ngIf="project.demoLink" [href]="project.demoLink" target="_blank">Demo</a>
-      </div>
-      <button (click)="toggleAdditionalInfo()" class="info-toggle">
-        Toggle Additional Info
-        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="additional-info" *ngIf="showAdditionalInfo">
-        <div *ngIf="project.problemStatement">
-          <h3>Problem Statement</h3>
-          <p>{{ project.problemStatement }}</p>
-        </div>
-        <div *ngIf="project.goals && project.goals.length">
-          <h3>Goals</h3>
-          <ul>
-            <li *ngFor="let goal of project.goals">{{ goal }}</li>
-          </ul>
-        </div>
-        <div *ngIf="project.uniqueValueProposition">
-          <h3>Unique Value Proposition</h3>
-          <p>{{ project.uniqueValueProposition }}</p>
-        </div>
-        </div>
     </div>
   </div>
 </div>

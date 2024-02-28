@@ -124,11 +124,14 @@
     padding: 10px;
     margin: 10px;
     justify-content: center;
-
+    max-height: 100vh;
+    overflow-y: auto;
   }
   nav li {
     margin-right: 15px;
-    margin-bottom: 20px; /* Adjust this value as needed */
+    margin-bottom: 20px; 
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
 
   nav a {

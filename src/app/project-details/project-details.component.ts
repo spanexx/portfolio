@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../Models/Projects.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ProjectService } from '../service/project.service';
@@ -9,7 +9,7 @@ import { projectsData } from '../../datas/Projects.data';
 @Component({
   selector: 'app-project-details',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterLink],
   templateUrl: './project-details.component.html',
   styleUrls: ['./project-details.component.css']
 })

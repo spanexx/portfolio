@@ -5,8 +5,9 @@
 
 .project-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns as needed */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust grid columns as needed */
   column-gap: 20px; /* Adjust spacing between cards */
+  margin-top: 50px;
 }
 
 .project-card {
@@ -14,6 +15,7 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  margin-top: 32px;
 }
 
 .project-card:hover {
@@ -26,12 +28,14 @@
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
+  height: 250px;
 }
 
 .project-info {
   padding: 15px;
   background-color: #f2f2f2; /* Light background for better readability */
   border-radius: 0 0 8px 8px; /* Match card border-radius */
+  height: 250px;
 }
 
 h3 {

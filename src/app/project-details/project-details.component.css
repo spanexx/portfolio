@@ -1,149 +1,16 @@
-.project-details-container {
-  margin: 20px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.project-detail-container:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-detail-image-wrapper {
-  position: relative;
-  width: 50%;
+/* Add these styles to your global or component-specific CSS file */
+.project-detail-info-overlay {
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  width: 80%; /* Adjust the width as needed */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
 }
 
 .project-detail-image {
-  max-width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+  width: 100%; /* Set the image width to 100% of its container */
+  height: 600px; /* Set a maximum height for the image to avoid stretching */
+  object-fit: cover; /* Maintain the image aspect ratio and cover the container */
 }
-
-.project-detail-image:hover {
-  transform: scale(1.05);
-}
-
-.project-detail-info-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.project-detail-container:hover .project-detail-info-overlay {
-  opacity: 1;
-}
-
-.project-detail-info {
-  padding: 20px;
-  color: #333;
-}
-
-.project-detail-tags {
-  margin-bottom: 10px;
-}
-
-.project-detail-tags span {
-  background-color: #3f51b5;
-  color: white;
-  padding: 5px 10px;
-  margin-right: 5px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-/* Additional stylistic elements */
-
-.project-detail-links a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3f51b5;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: color 0.2s ease-in-out;
-  margin-right: 10px;
-}
-
-.project-detail-links a:hover {
-  color: #fff;
-}
-
-.info-toggle {
-  background-color: #3f51b5;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.info-toggle:hover {
-  background-color: #4caf50;
-}
-
-.info-toggle .icon {
-  margin-left: 5px;
-}
-
-.additional-info {
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
-.additional-info h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.additional-info p {
-  margin-bottom: 15px;
-}
-
-
-.project-detail-container {
-  /* Consider replacing the box-shadow with a neon-like glow effect */
-  box-shadow: none;
-  border: 2px solid #3f51b5;
-  border-radius: 10px;
-}
-
-.project-detail-info-overlay {
-  /* Adjust background color and opacity for better blending */
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Experiment with font styles and spacing to enhance readability */
-
-.project-detail-info {
-  font-family: sans-serif;
-}
-
-.project-detail-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.project-detail-description {
-  line-height: 1.8;
-  text-indent: 20px;
-}
-
-/* Further customization based on your preferences and design system */

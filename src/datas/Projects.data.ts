@@ -4,218 +4,199 @@ import { Project, Challenge, Result } from '../app/Models/Projects.model'; // Ad
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: 'Project A',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    tags: ['Angular', 'TypeScript', 'HTML', 'CSS'],
-    link: '/projects',
-    image: './assets/project1.png',
-    technologiesUsed: ['Angular', 'TypeScript', 'HTML', 'CSS'],
-    githubLink: 'https://github.com/yourusername/project-a',
-    demoLink: 'https://demo.project-a.com',
-    problemStatement: 'Solving a complex problem in the industry.',
-    goals: ['Improve user experience', 'Optimize performance'],
-    uniqueValueProposition:
-      'Revolutionary solution that simplifies daily tasks.',
-    developmentStack: ['Angular', 'TypeScript', 'Node.js', 'MongoDB'],
-    challenges: [
-      {
-        description: 'Integration with third-party API',
-        solution: 'Implemented custom middleware',
-      },
-      {
-        description: 'UI/UX improvements',
-        solution: 'Conducted user feedback sessions',
-      },
-    ],
-    results: [
-      {
-        metric: 'Increased user engagement by 20%',
-        description: 'Implemented gamification features',
-      },
-      {
-        metric: 'Reduced load time by 15%',
-        description: 'Optimized server-side rendering',
-      },
-    ],
-    keyLearnings: [
-      'Adaptability to new technologies',
-      'Effective collaboration in a remote team',
-    ],
-    futureVision: 'Continuously evolve and expand functionality.',
-  },
+  title: 'Portfolio',
+  description: 'A personal portfolio website built using Angular, showcasing various projects and skills.',
+  tags: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+  link: '/projects',
+  image: './assets/project1.png',
+  technologiesUsed: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+  githubLink: 'https://github.com/spanexx/portfolio',
+  demoLink: '', // Add a demo link if applicable
+  problemStatement: 'Create an interactive and informative portfolio to showcase skills and projects.',
+  goals: ['Improve user experience', 'Provide a comprehensive overview of skills and projects'],
+  uniqueValueProposition: 'Personalized and visually appealing portfolio to stand out to potential employers or collaborators.',
+  developmentStack: ['Angular', 'TypeScript'],
+  challenges: [
+    {
+      description: 'Integrating Angular CLI for project generation',
+      solution: 'Utilized Angular CLI for project scaffolding and development.',
+    },
+    {
+      description: 'Routing for different sections',
+      solution: 'Implemented Angular routing for seamless navigation between sections.',
+    },
+  ],
+  results: [
+    {
+      metric: 'Increased self-presentation capabilities',
+      description: 'Effectively showcase skills and projects to the audience.',
+    },
+    {
+      metric: 'Enhanced personal branding',
+      description: 'Established a professional online presence.',
+    },
+  ],
+  keyLearnings: [
+    'Angular CLI usage and project structure',
+    'Effective use of Angular routing for SPA',
+  ],
+  futureVision: 'Continuously update and improve the portfolio with new projects and skills.',
+},
   {
     id: 2,
-    title: 'Project B',
-    description:
-      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['React', 'JavaScript', 'CSS', 'API'],
-    link: '/projects',
-    image: './assets/project2.jpg',
-    technologiesUsed: ['React', 'JavaScript', 'CSS', 'API'],
-    githubLink: 'https://github.com/yourusername/project-b',
-    demoLink: 'https://demo.project-b.com',
-    problemStatement: 'Addressing a market gap with innovative features.',
-    goals: [
-      'Achieve seamless data synchronization',
-      'Improve real-time collaboration',
-    ],
-    uniqueValueProposition: 'Transforming the way users interact with data.',
-    developmentStack: ['React', 'JavaScript', 'Node.js', 'MongoDB'],
-    challenges: [
-      {
-        description: 'Optimize API responses',
-        solution: 'Implemented caching mechanism',
-      },
-      {
-        description: 'Real-time collaboration',
-        solution: 'Utilized WebSocket technology',
-      },
-    ],
-    results: [
-      {
-        metric: 'Increased user satisfaction by 25%',
-        description: 'Implemented user-friendly features',
-      },
-      {
-        metric: 'Enhanced data security',
-        description: 'Implemented end-to-end encryption',
-      },
-    ],
-    keyLearnings: [
-      'Agile development practices',
-      'Effective communication within the team',
-    ],
-    futureVision: 'Innovate and adapt to changing user needs.',
-  },
+  title: 'FoodKart',
+  description: 'An Angular application for an online food ordering platform - FoodKart.',
+  tags: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+  link: '/foodkart',
+  image: './assets/project2.png',
+  technologiesUsed: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+  githubLink: 'https://github.com/spanexx/foodkart',
+  demoLink: '', // Add a demo link if applicable
+  problemStatement: 'Create a user-friendly online food ordering platform with search functionality.',
+  goals: ['List various food items', 'Implement search functionality', 'Create responsive UI'],
+  uniqueValueProposition: 'Convenient online platform for users to explore and order food.',
+  developmentStack: ['Angular', 'TypeScript'],
+  challenges: [
+    {
+      description: 'Implementing search functionality',
+      solution: 'Added a search feature and connected it to the backend for fetching relevant data.',
+    },
+    {
+      description: 'Responsive UI design',
+      solution: 'Utilized CSS and HTML for creating a responsive and visually appealing user interface.',
+    },
+  ],
+  results: [
+    {
+      metric: 'Improved user engagement',
+      description: 'Users can easily search for their desired food items, enhancing the overall experience.',
+    },
+    {
+      metric: 'Bug fixing in progress',
+      description: 'Ongoing efforts to resolve issues and enhance application stability.',
+    },
+  ],
+  keyLearnings: [
+    'Integration with backend services',
+    'Enhanced skills in CSS for responsive design',
+  ],
+  futureVision: 'Complete bug fixing, connect to a backend server, and add additional features for a fully functional food ordering platform.',
+},
 
   {
     id: 3,
-    title: 'Project C',
-    description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    tags: ['Vue.js', 'JavaScript', 'SCSS', 'Firebase'],
-    link: '/projects',
-    image: './assets/project3.png',
-    technologiesUsed: ['Vue.js', 'JavaScript', 'SCSS', 'Firebase'],
-    githubLink: 'https://github.com/yourusername/project-c',
-    demoLink: 'https://demo.project-c.com',
-    problemStatement: 'Enhancing user collaboration and data visualization.',
-    goals: ['Implement real-time data updates', 'Enhance user interface'],
-    uniqueValueProposition: 'Revolutionizing data-driven decision-making.',
-    developmentStack: ['Vue.js', 'JavaScript', 'Node.js', 'Firebase'],
-    challenges: [
-      {
-        description: 'Real-time data synchronization',
-        solution: 'Utilized Firebase real-time database',
-      },
-      {
-        description: 'Complex data visualization',
-        solution: 'Implemented interactive charts',
-      },
-    ],
-    results: [
-      {
-        metric: 'Improved data accuracy',
-        description: 'Implemented data validation checks',
-      },
-      {
-        metric: 'Enhanced user interactivity',
-        description: 'Implemented drag-and-drop features',
-      },
-    ],
-    keyLearnings: [
-      'Vue.js best practices',
-      'Effective use of Firebase services',
-    ],
-    futureVision: 'Expand features for advanced data analysis.',
-  },
+  title: 'SpaneXxKart',
+  description: 'An Angular e-commerce website specializing in selling various types of shoes from popular brands.',
+  tags: ['Angular', 'HTML', 'TypeScript', 'CSS'],
+  link: '/spanexxKart',
+  image: './assets/project3.png', // Assuming you have an image file named spanexxKart.png
+  technologiesUsed: ['Angular', 'HTML', 'TypeScript', 'CSS'],
+  githubLink: 'https://github.com/spanexx/spanexxKart',
+  demoLink: '', // Add a demo link if applicable
+  problemStatement: 'Create a user-friendly online shoe store with categorized products and additional features.',
+  goals: ['Display 52 products with detailed information', 'Categorize products by gender, type, and brand', 'Highlight best sellers with distinct colors'],
+  uniqueValueProposition: 'A wide range of high-quality shoes from popular brands with a user-friendly interface.',
+  developmentStack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+  challenges: [
+    {
+      description: 'Implementing product categorization',
+      solution: 'Utilized Angular features to categorize products based on gender, type, and brand.',
+    },
+    {
+      description: 'Highlighting best sellers',
+      solution: 'Implemented a visual distinction for best-selling products using three distinct colors.',
+    },
+  ],
+  results: [
+    {
+      metric: 'Improved user engagement',
+      description: 'Users can easily find and explore products, leading to increased engagement.',
+    },
+    {
+      metric: 'Responsive design for various devices',
+      description: 'Ensured a seamless experience across different screen sizes.',
+    },
+  ],
+  keyLearnings: [
+    'Effective use of Angular for building dynamic web applications',
+    'Enhanced skills in HTML and CSS for creating visually appealing interfaces',
+  ],
+  futureVision: 'Continuously add new features, improve user experience, and expand the product range.',
+},
 
   {
     id: 4,
-    title: 'Project D',
-    description:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    tags: ['Express.js', 'MongoDB', 'GraphQL', 'React'],
-    link: '/projects',
-    image: './assets/project4.jpg',
-    technologiesUsed: ['Express.js', 'MongoDB', 'GraphQL', 'React'],
-    githubLink: 'https://github.com/yourusername/project-d',
-    demoLink: 'https://demo.project-d.com',
-    problemStatement: 'Building a scalable and efficient e-commerce platform.',
-    goals: ['Optimize database performance', 'Improve user authentication'],
-    uniqueValueProposition: 'Providing a seamless online shopping experience.',
-    developmentStack: ['Express.js', 'MongoDB', 'GraphQL', 'React'],
-    challenges: [
-      {
-        description: 'Scalability',
-        solution: 'Implemented load balancing and caching',
-      },
-      {
-        description: 'User authentication',
-        solution: 'Utilized JWT for secure authentication',
-      },
-    ],
-    results: [
-      {
-        metric: 'Reduced page load times',
-        description: 'Implemented server-side rendering',
-      },
-      {
-        metric: 'Enhanced security measures',
-        description: 'Implemented HTTPS and secure APIs',
-      },
-    ],
-    keyLearnings: [
-      'Scalable architecture design',
-      'Advanced GraphQL implementations',
-    ],
-    futureVision: 'Expand product offerings and user base.',
-  },
+  title: 'Interactive Icons',
+  description: 'A project showcasing interactive icons with dropdown functionality.',
+  tags: ['Angular', 'CSS', 'Animation'],
+  link: '/projects/interactive-icons',
+  image: './assets/project4.png',
+  technologiesUsed: ['Angular', 'CSS'],
+  githubLink: 'https://github.com/spanexx/portfolio/tree/master/src/app',
+  demoLink: '',
+  problemStatement: 'Enhance user experience with interactive icons and dropdowns.',
+  goals: ['Implement smooth animations', 'Create reusable Angular components'],
+  uniqueValueProposition: 'Engaging and visually appealing UI elements.',
+  developmentStack: ['Angular', 'CSS'],
+  challenges: [
+    {
+      description: 'Dropdown animation',
+      solution: 'Utilized CSS animations for smooth slide-up and slide-down effects.',
+    },
+    {
+      description: 'Angular components',
+      solution: 'Created encapsulated components for each interactive icon.',
+    },
+  ],
+  results: [
+    {
+      metric: 'User engagement',
+      description: 'Increased user interaction through intuitive icons.',
+    },
+    {
+      metric: 'Code maintainability',
+      description: 'Reusable and modular Angular components for easy maintenance.',
+    },
+  ],
+  keyLearnings: ['Advanced CSS animations', 'Angular component architecture'],
+  futureVision: 'Expand the set of interactive icons and incorporate additional features.',
+},
 
   {
     id: 5,
-    title: 'Project E',
-    description:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: ['Django', 'Python', 'Bootstrap', 'PostgreSQL'],
-    link: '/projects',
+    title: 'ToDo Web Application',
+    description: 'A task and project management app to help users stay organized and focused.',
+    tags: ['Web Application', 'Task Management', 'Project Management'],
+    link: '/projects/todo-web-app',
     image: './assets/project5.png',
-    technologiesUsed: ['Django', 'Python', 'Bootstrap', 'PostgreSQL'],
-    githubLink: 'https://github.com/yourusername/project-e',
-    demoLink: 'https://demo.project-e.com',
-    problemStatement: 'Streamlining content creation and collaboration.',
-    goals: [
-      'Implement content versioning',
-      'Enhance content editing capabilities',
-    ],
-    uniqueValueProposition:
-      'Empowering users with a feature-rich content management system.',
-    developmentStack: ['Django', 'Python', 'Bootstrap', 'PostgreSQL'],
+    technologiesUsed: ['React', 'Node.js', 'MongoDB', 'Express'],
+    githubLink: 'https://github.com/yourusername/todo-web-app',
+    demoLink: 'https://demo.todo-web-app.com',
+    problemStatement: 'Users struggle to stay organized and manage tasks effectively.',
+    goals: ['Create an intuitive user interface', 'Implement project and task management features'],
+    uniqueValueProposition: 'Seamless organization and management of tasks and projects.',
+    developmentStack: ['React', 'Node.js', 'MongoDB', 'Express'],
     challenges: [
       {
-        description: 'Content versioning',
-        solution: 'Implemented Git-like version control for content',
+        description: 'User authentication',
+        solution: 'Implemented user accounts for project creators while allowing guest usage.',
       },
       {
-        description: 'User-friendly content editor',
-        solution: 'Utilized a WYSIWYG editor',
+        description: 'Project invitations',
+        solution: 'Enabled tagging users by email for collaboration without account creation.',
       },
     ],
     results: [
       {
-        metric: 'Increased content creation efficiency',
-        description: 'Implemented collaborative editing',
+        metric: 'User engagement',
+        description: 'Increased user productivity and organization.',
       },
       {
-        metric: 'Streamlined content approval process',
-        description: 'Implemented workflow automation',
+        metric: 'Collaboration efficiency',
+        description: 'Streamlined collaboration through project invitations.',
       },
     ],
-    keyLearnings: [
-      'Advanced Django concepts',
-      'Effective content management strategies',
-    ],
-    futureVision:
-      'Expand features for seamless integration with external services.',
-  },
+    keyLearnings: ['User authentication strategies', 'Collaborative project management'],
+    futureVision: 'Expand features, enhance user experience, and scale for more users.',
+  }
 ];
