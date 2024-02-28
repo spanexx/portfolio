@@ -1,16 +1,6 @@
   <!-- about-me.component.html -->
 <div>
 
-  <app-icons
-[homeIcon]="true"
-[contactIcon]="true"
-[educationIcon]="true"
-[experienceIcon]="true"
-[projectIcon]="true"
-[skillIcon]="true"></app-icons>
-
-    <app-header></app-header>
-
 <section class="about-me">
   <div class="container">
     <div class="profile-image">
@@ -32,13 +22,9 @@
     </div>
   </div>
 </section>
-<app-projects></app-projects>
 <app-education></app-education>
-<app-experience [showHome]="false"></app-experience>
-<app-skills [showHome]="false"></app-skills>
+<app-skills></app-skills>
 
 
-    <app-contact [showHome]="false"></app-contact>
-    <app-footer></app-footer>
   </div>
   

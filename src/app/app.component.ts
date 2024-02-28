@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
@@ -10,6 +10,7 @@ import { SkillComponent } from './skill/skill.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeIconComponent } from './home-icon/home-icon.component';
+import { IconsComponent } from './icons/icons.component';
 
 
 @Component({
@@ -26,9 +27,12 @@ import { HomeIconComponent } from './home-icon/home-icon.component';
             ExperienceComponent,
             ProjectsComponent, 
             HomeIconComponent,
-            AboutMeComponent     
+            AboutMeComponent,
+            RouterOutlet,  
+            RouterLink,
+            IconsComponent
   ],
-  template: '<router-outlet></router-outlet>',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {

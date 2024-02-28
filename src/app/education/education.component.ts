@@ -14,29 +14,36 @@ import { IconsComponent } from '../icons/icons.component';
 export class EducationComponent {
   public education: any[] = [
     {
-      title: 'Bachelor of Science in Computer Science',
-      institution: 'University XYZ',
+      title: 'Diploma in Computer Science',
+      institution: 'Institute of Management and Technology',
       type: 'Traditional',
-      duration: '2016 - 2020'
+      duration: '2010 - 2012'
     },
     {
-      title: 'Web Development Bootcamp',
+      title: 'ERASMUS+ Program',
+      institution: 'Varna University of Management',
+      type: 'International Exchange',
+      duration: '2022 - 2023'
+    },
+    {
+      title: 'Figma',
       institution: 'Udemy',
       type: 'Online',
       duration: '2021 - Present'
     },
     {
-      title: 'Bachelor of Science in Computer Science',
-      institution: 'University XYZ',
+      title: 'Bachelor of Arts in Hospitality Management',
+      institution: 'Internapa College/University',
       type: 'Traditional',
-      duration: '2016 - 2020'
+      duration: '2019 - 2024'
     },
     {
-      title: 'Web Development Bootcamp',
-      institution: 'Udemy',
+      title: 'Angular',
+      institution: 'Self-Taught',
       type: 'Online',
       duration: '2021 - Present'
     },
     // Add more education items as needed
   ];
+  
 }

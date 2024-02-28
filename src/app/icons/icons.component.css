@@ -5,6 +5,7 @@
     margin-bottom: 20px;
     display: grid;
     grid-template-rows: 1fr auto;
+    z-index: 1000;
   }
   
   .icon-container > * {

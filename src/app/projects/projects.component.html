@@ -12,16 +12,9 @@
         <div class="tags">
           <span *ngFor="let tag of project.tags">{{ tag }}</span>
         </div>
-        <a [routerLink]="project.link" class="project-link">Visit Project</a>
+        <a routerLink="/projects/{{project.id}}" class="project-link">Visit Project</a>
       </div>
     </div>
   </div>
 </div>
 
-<app-icons
-[homeIcon]="true"
-[contactIcon]="true"
-[educationIcon]="true"
-[experienceIcon]="true"
-[projectIcon]="true"
-[skillIcon]="true"></app-icons>
